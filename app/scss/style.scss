@@ -3,6 +3,166 @@
 @import 'reset';
 @import 'global';
 
+.header{
+  &__inner{
+  margin: 50px 0 45px;
+  display:flex; 
+  justify-content: space-between;
+  align-items: center;
+  // background-color: aquamarine;
+  }
+}
+
+.logo{
+ &__image{
+  position: relative;
+ }
+
+ &__after::after{
+    content: "Glee.";
+    position: absolute;
+    font-size: 36px;
+    line-height: 58px;
+    left: 130px;
+    top: 45px;
+    color: $header;
+    @extend %quicksand-500;
+
+    // background-image: url('../images/icons/mark.jpg');
+ }
+
+}
+
+.menu{
+
+
+  &__list{
+    display: flex;
+    font-size: 15px;
+    line-height: 12px;
+  }
+
+  &__list-item + .menu__list-item{
+    margin-left: 35px;
+  }
+
+  &__list-link{
+    color: $header;
+    @extend %quicksand-500;
+  }
+}
+
+.user-nav{
+  display: flex;
+  
+  &__inner{
+    position: relative;
+    
+  }
+
+  &__inner + .user-nav__inner{
+    margin-left: 50px;
+  }
+
+  &__shape-mark{
+    display: flex;
+    
+
+  }
+  
+  &__link-mark{
+    margin-left: 50px;
+  }
+
+  &__num{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background-color: #fff;
+    width: 15px;
+    height: 15px;
+    top:9px;
+    right: 87px;
+    font-size: 10px;
+    text-align: center;
+    line-height: 18px;
+  }
+
+  &__num-mark{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background-color: #fff;
+    width: 15px;
+    height: 15px;
+    top:9px;
+    right: 25px;
+    font-size: 10px;
+    text-align: center;
+    line-height: 18px;
+  }
+  
+    &__icon{
+    // position: relative;   
+    min-width: 50px;
+    min-height: 50px;
+    background-color: #d4eaf5;
+    border-radius: 50%;
+    }
+
+  &__shape-mark{
+    // position: relative;
+    min-width: 150px;
+    min-height: 50px;
+    background-color: #fcd7b6;
+    border-radius: 35%;
+  }
+
+  &__ellipse{
+    // position: relative;
+    min-width: 50px;
+    min-height: 50px;
+    background-color: #88b3ca;
+    border-radius: 50%;
+  }
+
+  &__link-image{
+    position: absolute;
+    left: 16px;
+    /* right: auto; */
+    top: 16px;
+    
+  }
+
+   &__link-image-shape{
+    position: absolute;
+    top: 16px;
+    left: 35px
+  }
+
+  &__link-image-mark{
+    position: absolute;
+    top: 16px;
+    left: 100px
+  }
+
+
+
+
+ 
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
