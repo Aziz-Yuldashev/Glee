@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonst';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 .header{
@@ -180,16 +181,16 @@
       position: relative;
     }
     
-     &__after::after{
-        content: "Glee.";
-        position: absolute;
-        font-size: 36px;
-        line-height: 58px;
-        left: 130px;
-        top: 410px;
-        color: $header;
-        @extend %quicksand-500;
-      }
+    //  &__after::after{
+    //     content: "Glee.";
+    //     position: absolute;
+    //     font-size: 36px;
+    //     line-height: 58px;
+    //     left: 130px;
+    //     top: 410px;
+    //     color: $header;
+    //     @extend %quicksand-500;
+    //   }
 
   }
     
@@ -276,6 +277,86 @@
     margin-left: 12px;
   }
 
+}
+
+.top-slider{
+  background-image: url('../images/top-header-ellipse.png');
+  background-repeat: no-repeat;
+  background-size: 675px;
+  background-position: right;
+  background-color: #fcd7b6;
+  padding-top: 274px;
+  padding-bottom: 50px;
+
+  &__content{
+   padding-left: 190px;
+   
+  }
+
+  &__item{
+    display: flex !important;
+    justify-content: space-between;
+  }
+
+  &__title{
+    font-size: 72px;
+    line-height: 70px;
+    color: $header;
+    max-width: 430px;
+    margin-bottom: 45px;
+    @extend %quicksand-500;
+  }
+
+  &__text{
+    max-width: 370px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 30px;
+    @extend %quicksand-400;
+    color: #436372;
+  }
+
+  &__link{
+    color: #fff;
+    background-color: #a3bbc8;
+    padding: 20px 25px;
+    @extend %quicksand-500;
+    
+  }
+
+  &__img{
+    padding-top: 50px;
+  }
+
+
+}
+
+.slick-dots{
+  display: flex;
+  justify-content: center;
+
+  li{
+    padding: 0 8px;
+    button{
+      padding: 0;
+      font-size: 11px;
+      line-height: 9px;
+      border: none;
+      background-color: #fff;
+      width: 29px;
+      height: 29px;
+      opacity: 0.5;
+      border-radius: 50%;
+      color: #243f4d;
+      @extend %quicksand-500;
+      margin-top: 200px;
+    }
+    &.slick-active{
+      button{
+        opacity: 1;
+      }
+    }
+  }
 }
 
 
