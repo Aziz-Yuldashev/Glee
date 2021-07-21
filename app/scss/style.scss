@@ -317,10 +317,13 @@
   }
 
   &__link{
+    display: flex;
+    justify-content: space-between;
     color: #fff;
     background-color: #a3bbc8;
-    padding: 20px 25px;
+    padding: 23px 20px;
     @extend %quicksand-500;
+    max-width: 200px;
     
   }
 
