@@ -8,5 +8,7 @@ $(function(){
     autoplaySpeed: 2000
 
   })
-
+  
+  var Mixer = mixitup ( '.products__content' );
+  
 });

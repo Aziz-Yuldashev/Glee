@@ -438,6 +438,97 @@
 
 }
 
+.products{
+  padding: 75px 0 85px;
+
+  &__top{
+    text-align: center;
+
+  }
+
+  &__filter-btn + .products__filter-btn{
+    margin-left: 28px;
+  }
+
+  &__btn{
+    border:none;
+    background-color: transparent;
+    color: #8b8b8b;
+    font-size: 16px;
+    @extend %quicksand-500;
+    margin-bottom: 80px;
+  }
+
+  &__btn:hover{
+    color: #000;
+    cursor: pointer;
+  }
+
+  &__content{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(2, 50%);
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+
+  &__item{
+    position: relative;
+   
+  }
+
+  &__item-link-mark1{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: 31px 115px;
+    background-size: 124px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: block;
+  }
+
+
+
+
+  &__item-link-mark2{
+    position: absolute; 
+    background-repeat: no-repeat;
+    background-position: 83px 115px;
+    background-size: 124px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: block;
+  }
+ 
+  &__item-link-mark3{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: 135px 115px;
+    background-size: 124px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: block;
+  
+  }
+
+  &__item-link-mark{
+    opacity:0
+  }
+
+  &__item-link-mark:hover{
+    opacity:1
+  }
+
+}
+
+
+
 
 
 
