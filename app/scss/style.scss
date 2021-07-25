@@ -441,13 +441,19 @@
 .products{
   padding: 75px 0 85px;
 
-  &__top{
-    text-align: center;
+ 
 
+  &__title{
+    text-align: center;
+  }
+
+  &__filter-btn{
+    text-align: center;
   }
 
   &__filter-btn + .products__filter-btn{
     margin-left: 28px;
+    
   }
 
   &__btn{
@@ -457,6 +463,7 @@
     font-size: 16px;
     @extend %quicksand-500;
     margin-bottom: 80px;
+    
   }
 
   &__btn:hover{
@@ -465,65 +472,74 @@
   }
 
   &__content{
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: repeat(2, 50%);
     max-width: 1170px;
     margin: 0 auto;
   }
-
+  
+  &__items{
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+    // grid-gap: 30px 45px;
+    
+  }
+  
+  
   &__item{
     position: relative;
-   
+    overflow: hidden;
   }
-
-  &__item-link-mark1{
-    position: absolute;
-    background-repeat: no-repeat;
-    background-position: 31px 115px;
-    background-size: 124px;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    display: block;
-  }
-
-
-
-
-  &__item-link-mark2{
-    position: absolute; 
-    background-repeat: no-repeat;
-    background-position: 83px 115px;
-    background-size: 124px;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    display: block;
-  }
- 
-  &__item-link-mark3{
-    position: absolute;
-    background-repeat: no-repeat;
-    background-position: 135px 115px;
-    background-size: 124px;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    display: block;
   
+  &__item-img{
+    max-width: 300px;
+    height: 380px;
   }
 
-  &__item-link-mark{
-    opacity:0
+ &__item-link-mark{
+   position: absolute;
+   left: 0px;
+   right: 0px;
+   bottom: 180px;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   width: 170px;
+   height: 45px;
+   margin: 0 auto;
+   transform: translateY(3300%);
+  transition: all .8s;
+ }
+
+  &__item-link{
+    border-radius: 50%;
+    background-color:#fff;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s;
+    display: inherit;
+    path{
+    transition: all 1s;
+    }
   }
 
-  &__item-link-mark:hover{
-    opacity:1
+  &__item-link:hover{
+    background-color: #a3bbc8;
+    path{
+      fill: #fff;
+    }
   }
+  
+  
+  &__item:hover{
+   
+    .products__item-link-mark{
+      transform: translateY(0);
+    }
+   }
 
 }
 
