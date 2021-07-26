@@ -10,5 +10,6 @@ $(function(){
   })
   
   var Mixer = mixitup ( '.products__content' );
+  var Mixer = mixitup ( '.design__content' );
   
 });
