@@ -6,33 +6,27 @@
 
 .header{
   &__inner{
-  margin: 50px 0 45px;
-  display:flex; 
-  justify-content: space-between;
-  align-items: center;
+    margin: 50px 0 45px;
+    display:flex; 
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
   // background-color: aquamarine;
   }
-}
 
-
-.logo{
-
-  &__image{
-     position: relative;
-  }
-
- &__image ::after{  
+  &__inner::before{
     content: "Glee.";
     position: absolute;
-    background-image: url('../images/glee.png');
-    width: 50px;
-    height: 50px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    top: 0;
-    left: 0;
+    font-size: 36px;
+    line-height: 58px;
+    top: -6px;
+    left: 60px;
+    @extend %quicksand-500;
+  }
 }
-}
+
+
+
 
 .menu{
 
@@ -130,7 +124,6 @@
   &__link-image{
     position: absolute;
     left: 16px;
-    /* right: auto; */
     top: 16px;
     
   }
@@ -149,6 +142,11 @@
 
 }
 
+.footer{
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
 .footer-top{
   padding: 80px 0 70px;
   border-bottom: 1px solid #dae4e9;
@@ -157,6 +155,18 @@
   &__contact{
     width: 220px;
     margin-right: 100px;
+    position: relative;
+    
+  }
+
+  &__contact::before{
+    content: "Glee.";
+    position: absolute;
+    font-size: 36px;
+    line-height: 58px;
+    top: -8px;
+    left: 60px;
+    @extend %quicksand-500;
   }
 
   &__our{
@@ -170,7 +180,7 @@
   }
 
   &__news{
-    max-width: 270px;
+    width: 320px;
   }
   
   &__logo{
@@ -180,17 +190,19 @@
     &__image{
       position: relative;
     }
-    
-    //  &__after::after{
-    //     content: "Glee.";
-    //     position: absolute;
-    //     font-size: 36px;
-    //     line-height: 58px;
-    //     left: 130px;
-    //     top: 410px;
-    //     color: $header;
-    //     @extend %quicksand-500;
-    //   }
+
+   
+
+    &__contact::before{
+      content: "Glee.";
+      position: absolute;
+      font-size: 36px;
+      line-height: 58px;
+      top: -6px;
+      left: 60px;
+      @extend %quicksand-500;
+    }
+
 
   }
     
@@ -222,6 +234,7 @@
     line-height: 32x;
     color: #7b7b7b;
     margin-bottom: 35px;
+    width: 235px;
   }
 
   &__form{
@@ -258,6 +271,7 @@
 .footer-bottom{
   display: flex;
   justify-content: space-between;
+  margin-top: 35px;
 
   &__text{
     font-size: 14px;
@@ -268,13 +282,22 @@
 
   &__menu-list{
     display: flex;
-
   }
-
   
 
   &__menu-item + .footer-bottom__menu-item{
-    margin-left: 12px;
+    margin-left: 30px;
+  }
+
+  &__menu-link{
+    position: relative;
+  }
+
+  &__menu-link::after{
+    content: "|";
+    position: absolute;
+    top: 0;
+    right: -15px;
   }
 
 }
@@ -692,10 +715,120 @@
     justify-content: center;
   }
 
+}
 
+.our{
+  max-width: 1170px;
+  margin: 0 auto;
+  
+  &__top{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__top-link{
+    position: relative;
+    font-size: 16px;
+    color: $our;
+    margin-right: 20px;
+  }
+  
+  &__top-link::after{
+    content: "";
+    position: absolute;
+    background-image: url('../images/our/link.svg');
+    background-repeat: no-repeat;
+    width: 6px;
+    height: 11px;
+    top: 3px;
+    right: -20px;
+  }
+ 
 
   
+
+  &__items{
+    display: flex;
+   
+  }
+
+  &__item{
+    width: 370px;
+    position: relative;
+  }
+
+  &__item + .our__item{
+    margin-left: 30px;
+  }
+
+  &__img{
+    height: 250px;
+  }
+
+  &__item::before{
+    content:"NEWS";
+    position: absolute;
+    background-color: #a3bbc8;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 8px 33px;
+    top: 228px;
+    left: 30px;
+    border-radius: 50px;
+    text-align: center;
+    color: #fff;
+    @extend %quicksand-500;
+    z-index: 1;
+  }
+
+  &__box{
+    padding: 35px 55px 35px 30px;
+    position: absolute;
+    background-color: #fff;
+    
+  }
+
+  &__text{
+    border-bottom: 1px solid #e0e0e0;
+    width: 286px;
+    height: 75px;
+    color: $our;
+    @extend %quicksand-500;
+  }
+
+  &__link-box{
+    display: flex;
+    padding: 20px 0 0 ;
+  }
+
+  &__link{
+    font-size: 12px;
+    line-height: 30p;
+    color: #222933;
+  }
+
+  &__link + .our__link{
+    margin-left: 30px;
+  }
 }
+
+.partners{
+  
+  padding-top: 270px;
+  padding-bottom: 90px;
+
+  background-color: rgb(252, 215, 182);
+  &__list{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 1040px;
+    align-items: center;
+    color: rgb(252, 215, 182);
+  }
+}
+
+
 
 
 
