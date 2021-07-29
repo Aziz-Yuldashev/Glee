@@ -1,0 +1,27 @@
+$header: #3f82a2;
+$our: #262626;
+$link: #436372;
+
+
+%quicksand-500{
+  font-family: 'Rubik-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%quicksand-400{
+  font-family: 'Rubik-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%quicksand-300{
+  font-family: 'Rubik-Light', sans-serif;
+  font-weight: 300;
+}
+
+
+@function max($numbers...) {
+   @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+   @return m#{i}n(#{$numbers});
+}
