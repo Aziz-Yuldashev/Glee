@@ -789,6 +789,7 @@
     font-size: 16px;
     color: $our;
     margin-right: 20px;
+    margin-top: 20px;
   }
   
   &__top-link::after{
@@ -957,6 +958,44 @@
 .partners__login{
   padding-top: 80px;
 }
+
+
+.terms{
+  padding: 120px 0 40px; 
+  max-width: 1200px;
+  margin: 0 auto;
+
+  &__title{
+    margin-bottom: 25px;
+    font-size: 24px;
+    line-height: 40px;
+    color: #243f4d;
+    @extend %quicksand-500;
+  }
+
+  &__item{
+    margin-bottom: 80px;
+  }
+
+  &__text{
+    font-size: 16px;
+    line-height: 30px;
+    color: #243f4d;
+    @extend %quicksand-400;
+    
+  }
+
+  &__num{
+    margin-bottom: 25px;
+    
+  }
+
+}
+
+ol{
+    list-style-type: decimal-leading-zero;
+}
+
 
 
 
