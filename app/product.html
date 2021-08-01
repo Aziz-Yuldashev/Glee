@@ -16,6 +16,7 @@
       <div class="header__inner">
         <a class="logo" href="#">
           <img class="logo__image" src="images/logo.png" alt="">
+          <span class="logo__after"></span>
         </a>
 
         <nav class="menu">
@@ -84,131 +85,214 @@
   </header>
 
   <main class="main">
-    <section class="top-slider">
-      <div class="container">
-        <div class="top-slider__inner">
 
-          <div class="top-slider__item">
+    <section class="top">
+      <div class="top__container">
+        <h2 class="top__title">
+          Product list 1
+        </h2>
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
 
-            <div class="top-slider__content">
-              <h3 class="top-slider__title">
-                SMART AND
-                TRENDY
-              </h3>
-              <p class="top-slider__text">
-                Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-              </p>
-              <a class="top-slider__link" href="#">Shop Now
-                <img class="top-slider__link-img" src="images/slider/arrow.png" alt="">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="">
+                Home
               </a>
-            </div>
+            </li>
 
-            <img class="top-slider__img" src="images/slider/top-slider.png" alt="slider image">
-          </div>
-
-          <div class="top-slider__item">
-
-            <div class="top-slider__content">
-              <h3 class="top-slider__title">
-                SMART AND
-                TRENDY
-              </h3>
-              <p class="top-slider__text">
-                Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-              </p>
-              <a class="top-slider__link" href="#">Shop Now
-
-                <img class="top-slider__link-img" src="images/slider/arrow.png" alt="arrow">
-
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="">
+                Product list 1
               </a>
-            </div>
-            <img class="top-slider__img" src="images/slider/top-slider.png" alt="slider image">
+            </li>
 
-
-          </div>
-
-          <div class="top-slider__item">
-
-            <div class="top-slider__content">
-              <h3 class="top-slider__title">
-                SMART AND
-                TRENDY
-              </h3>
-              <p class="top-slider__text">
-                Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-              </p>
-              <a class="top-slider__link" href="#">Shop Now
-                <img class="top-slider__link-img" src="images/slider/arrow.png" alt="">
-              </a>
-            </div>
-            <img class="top-slider__img" src="images/slider/top-slider.png" alt="slider image">
-
-          </div>
-
-        </div>
-      </div>
-    </section>
-    <section class="support-info">
-      <div class="support">
-        <div class="container">
-
-          <div class="support__inner">
-            <div class="support__item support__item-time">
-
-              <h5 class="support__title">
-                Support 24/7.
-              </h5>
-              <p class="support__text">
-                Contact us 24 hours a day,
-                7 days a week.
-              </p>
-
-            </div>
-            <div class="support__item support__item-car">
-
-              <h5 class="support__title">
-                Delivery.
-              </h5>
-              <p class="support__text">
-                Free shipping on all US order.
-              </p>
-
-            </div>
-            <div class="support__item support__item-card">
-
-              <h5 class="support__title">
-                100% Payment secure.
-              </h5>
-              <p class="support__text">
-                We ensure secure payment
-                with PEV.
-              </p>
-
-            </div>
-          </div>
-
+          </ul>
         </div>
       </div>
     </section>
 
-    <section class="products">
-      <div class="container">
+
+    <section class="shop">
+      <div class="shop__inner">
+        <div class="shop__filters filter">
+
+          <div class="filter__item filter-category">
+            <h3 class="filter__title">
+              CATEGORY
+            </h3>
+            <form class="filter-category__form" action="#">
+
+              <label class="filter-category__label">
+                <input class="filter-category__input" type="checkbox">
+                <div class="filter-category__checkbox">
+                  <span>Chair</span>
+                  <img class="filter-category__img" src="images/filter/category.svg" alt="icon filter-category">
+                </div>
+              </label>
+
+              <label class="filter-category__label">
+                <input class="filter-category__input" type="checkbox">
+                <div class="filter-category__checkbox">
+                  <span> Table</span>
+                  <img class="filter-category__img" src="images/filter/category.svg" alt="icon filter-category">
+                </div>
+              </label>
+
+              <label class="filter-category__label">
+                <input class="filter-category__input" type="checkbox">
+                <div class="filter-category__checkbox">
+                  <span>Lamp</span>
+                  <img class="filter-category__img" src="images/filter/category.svg" alt="icon filter-category">
+                </div>
+              </label>
+
+              <label class="filter-category__label">
+                <input class="filter-category__input" type="checkbox">
+                <div class="filter-category__checkbox">
+                  <span>Watch</span>
+                  <img class="filter-category__img" src="images/filter/category.svg" alt="icon filter-category">
+                </div>
+              </label>
+
+              <label class="filter-category__label">
+                <input class="filter-category__input" type="checkbox">
+                <div class="filter-category__checkbox">
+                  <span>Clock</span>
+                  <img class="filter-category__img" src="images/filter/category.svg" alt="icon filter-category">
+                </div>
+              </label>
+
+            </form>
+
+          </div>
+
+          <div class="filter__item filter-price">
+            <h3 class="filter__title">
+              PRICE
+            </h3>
+            <form class="filter-price__form" action="#">
+              <input class="filter-price__input" type="text" data-min="0" data-max="800" data-from="100" data-to="500">
+              <div class="filter-price__data">
+                <div class="filter-price__double">
+                  <span class="filter-price__dollar">$</span>
+                  <span class="filter-price__from"></span>
+                </div>
+                <div class="filter-price__double">
+                  <span class="filter-price__dollar">$</span>
+                  <span class="filter-price__to"></span>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="filter__item filter-brand">
+            <h3 class="filter__title">
+              BRAND
+            </h3>
+            <form class="filter-brand__form" action="#">
+              <label calss="filter-brand__label">
+                <input class="filter-brand__input" type="checkbox">
+                <div class="filter-brand__checkbox">
+                  <span>RFL</span>
+                  <span class="filter-brand__numbers">(10)</span>
+                </div>
+              </label>
+
+              <label calss="filter-brand__label">
+                <input class="filter-brand__input" type="checkbox">
+                <div class="filter-brand__checkbox">
+                  <span>Brothers</span>
+                  <span class="filter-brand__numbers">(21)</span>
+                </div>
+              </label>
+
+              <label calss="filter-brand__label">
+                <input class="filter-brand__input" type="checkbox">
+                <div class="filter-brand__checkbox">
+                  <span>Regal</span>
+                  <span class="filter-brand__numbers">(3)</span>
+                </div>
+              </label>
+
+              <label calss="filter-brand__label">
+                <input class="filter-brand__input" type="checkbox">
+                <div class="filter-brand__checkbox">
+                  <span>Nadia</span>
+                  <span class="filter-brand__numbers">(14)</span>
+                </div>
+              </label>
+
+              <label calss="filter-brand__label">
+                <input class="filter-brand__input" type="checkbox">
+                <div class="filter-brand__checkbox">
+                  <span>Otobi</span>
+                  <span class="filter-brand__numbers">(6)</span>
+                </div>
+              </label>
+            </form>
+          </div>
+
+          <div class="filter__item filter-recent">
+            <h3 class="filter__title">
+              RECENT PRODUCTS
+            </h3>
+
+            <form class="filter-recent__form" action="#">
+
+              <label class="filter-recent__label">
+                <div class="filter-recent__item">
+                  <a href="" class="filter-recent__link">
+                    <img class="filter-recent__image" src="images/recent/recent1.jpg" alt="class=" filter-recent image>
+                  </a>
+                </div>
+                <div class="filter-recent__box">
+                  <h2 class="filter-recent__title">
+                    Pendant lamp
+                  </h2>
+                  <div class="filter-recent__star" data-rateyo-rating="4"></div>
+                  <span class="filter-recent__price">23$</span>
+                </div>
+              </label>
 
 
-        <h3 class="title products__title">
-          Products of the week
-        </h3>
-        <div class="products__filter-btn">
-          <button class="products__btn" data-filter="all">All</button>
-          <button class="products__btn" data-filter=".category-a">Furnitures</button>
-          <button class="products__btn" data-filter=".category-b">Chairs</button>
-          <button class="products__btn" data-filter=".category-d">Lighting</button>
-          <button class="products__btn" data-filter=".category-c">Decor</button>
+              <label class="filter-recent__label">
+                <div class="filter-recent__item">
+                  <a href="" class="filter-recent__link">
+                    <img class="filter-recent__image filter-recent__image-two" src="images/recent/recent2.jpg"
+                      alt="class=" filter-recent image>
+                  </a>
+                </div>
+                <div class="filter-recent__box">
+                  <h2 class="filter-recent__title">
+                    Pendant lamp
+                  </h2>
+                  <div class="filter-recent__star" data-rateyo-rating="4"></div>
+                  <span class="filter-recent__price">23$</span>
+                </div>
+              </label>
+
+
+              <label class="filter-recent__label">
+                <div class="filter-recent__item">
+                  <a href="" class="filter-recent__link">
+                    <img class="filter-recent__image filter-recent__image-three" src="images/recent/recent3.jpg"
+                      alt="class=" filter-recent image>
+                  </a>
+                </div>
+                <div class="filter-recent__box">
+                  <h2 class="filter-recent__title">
+                    Pendant lamp
+                  </h2>
+                  <div class="filter-recent__star" data-rateyo-rating="4"></div>
+                  <span class="filter-recent__price">23$</span>
+                </div>
+              </label>
+            </form>
+          </div>
         </div>
 
-
-        <div class="products__content">
-          <div class="products__items">
+        <div class="shop-content">
+          <div class="shop-content__inner">
             <div class="products__item mix category-a">
 
               <div class="products__chair">
@@ -433,340 +517,132 @@
                 </a>
               </div>
             </div>
-
           </div>
         </div>
       </div>
     </section>
-
-
-    <section class="lamp">
-      <div class="container">
-        <div class="lamp__items">
-
-          <div class="lamp__item lamp__item-one">
-            <img class="lamp__img" src="images/lamp/lamp1.png" alt="lamp image">
-            <div class="lamp__info">
-              <h6 class="lamp__title">
-                Mirum Notare Tellus
-              </h6>
-              <p class="lamp__text">
-                LEDCornBulb Lamp 5W 7W 10W 12W 15W E26 E27LEDCornLight
-              </p>
-              <a class="lamp__link" href="#">View More
-                <img class="lamp__link-img" src="images/lamp/arrow-blue.svg" alt="arrow">
-              </a>
-            </div>
-          </div>
-
-          <div class="lamp__item lamp__item-two">
-            <img class="lamp__img" src="images/lamp/lamp2.png" alt="lamp image">
-            <div class="lamp__info">
-              <h6 class="lamp__title">
-                Malesuada Tempor
-                Euismod
-              </h6>
-              <p class="lamp__text">
-                50W 8000lm Compact Size for HID StreetLightReplacementLEDCornLight
-              </p>
-              <a class="lamp__link" href="#">View More
-                <img class="lamp__link-img" src="images/lamp/arrow-blue.svg" alt="arrow">
-              </a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="design">
-      <div class="container">
-
-
-        <h3 class="title design__title">
-          Products of the week
-        </h3>
-        <div class="design__filter-btn">
-          <button class="design__btn" data-filter="all">All</button>
-          <button class="design__btn" data-filter=".category-a">Furnitures</button>
-          <button class="design__btn" data-filter=".category-b">Chairs</button>
-          <button class="design__btn" data-filter=".category-d">Lighting</button>
-          <button class="design__btn" data-filter=".category-c">Decor</button>
-        </div>
-
-        <div class="design__content">
-          <div class="design__items">
-
-            <div class="design__item mix category-b">
-              <img class="design__item-img" src="images/design/design1.jpg" alt="design image">
-            </div>
-
-            <div class="design__item mix category-a">
-              <img class="design__item-img" src="images/design/design2.jpg" alt="design image">
-            </div>
-
-            <div class="design__item mix category-b">
-              <img class="design__item-img" src="images/design/design3.jpg" alt="design image">
-            </div>
-
-            <div class="design__item mix category-d">
-              <img class="design__item-img" src="images/design/design4.jpg" alt="design image">
-            </div>
-
-            <div class="design__item mix category-d">
-              <img class="design__item-img" src="images/design/design5.jpg" alt="design image">
-            </div>
-
-            <div class="design__item mix category-c">
-              <img class="design__item-img" src="images/design/design6.jpg" alt="design image">
-            </div>
-
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section class="video">
-      <div class="video__inner">
-        <a class="video__link" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
-          <img class="video__img" src="images/video/video-play.svg" alt="video play">
-        </a>
-      </div>
-    </section>
-
-    <section class="our">
-
-      <div class="our__top">
-        <h3 class="title">
-          Our Insights & Articles
-        </h3>
-        <a class="our__top-link" href="#">
-          View All
-        </a>
-      </div>
-      <div class="our__content">
-        <div class="our__items">
-
-          <div class="our__item">
-            <img class="our__img" src="images/our/our1.jpg" alt="article image">
-
-            <div class="our__box">
-              <p class="our__text">
-                Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-              </p>
-              <div class="our__link-box">
-                <a class="our__link" href="#">
-                   28 JANUARY, 2020
-                </a>
-                <a class="our__link" href="#">
-                   BY ADMIN
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="our__item">
-            <img class="our__img" src="images/our/our2.jpg" alt="article image">
-
-            <div class="our__box">
-              <p class="our__text">
-                Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              </p>
-              <div class="our__link-box">
-                <a class="our__link" href="#">
-                   28 JANUARY, 2020
-                </a>
-                <a class="our__link" href="#">
-                   BY ADMIN
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="our__item">
-            <img class="our__img" src="images/our/our3.jpg" alt="article image">
-
-            <div class="our__box">
-              <p class="our__text">
-                Rncididunt ut labore et dolore magna aliqua. Ut enim
-              </p>
-              <div class="our__link-box">
-                <a class="our__link" href="#">
-                   28 JANUARY, 2020
-                </a>
-                <a class="our__link" href="#">
-                   BY ADMIN
-                </a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <div class="partners">
-      <ul class="partners__list">
-        <li class="partners__item">
-
-          <img class="partners__img" src="images/partners/partners1.png" alt="image partner">
-
-        </li>
-
-        <li class="partners__item">
-
-          <img class="partners__img" src="images/partners/partners2.png" alt="image partner">
-
-        </li>
-
-        <li class="partners__item">
-
-          <img class="partners__img" src="images/partners/partners3.png" alt="image partner">
-
-        </li>
-
-        <li class="partners__item">
-
-          <img class="partners__img" src="images/partners/partners4.png" alt="image partner">
-
-        </li>
-
-        <li class="partners__item">
-
-          <img class="partners__img" src="images/partners/partners5.png" alt="image partner">
-
-        </li>
-
-      </ul>
-    </div>
-
-
-
 
 
   </main>
 
   <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-top__items footer-top__contact">
+          <a class="footer-top__logo" href="#">
+            <img class="footer-top__logo__image" src="images/logo.png" alt="">
+            <span class="footer-top__logo__after"></span>
+          </a>
 
-    <div class="footer-top">
-      <div class="footer-top__items footer-top__contact">
-        <a class="footer-top__logo" href="#">
-          <img class="footer-top__logo__image" src="images/logo.png" alt="">
-          <span class="footer-top__logo__after"></span>
-        </a>
+          <a class="footer-top__adress" href="#">ADDRESS: 4772 Wines Lane
+            Houston, TX 77032</a>
+          <a class="footer-top__phone" href="tel:+8323475843">Telephone: +832-347-5843</a>
+          <a class="footer-top__email" href="mailto:contact@Glee.com">Email: contact@Glee.com</a>
+        </div>
 
-        <a class="footer-top__adress" href="#">ADDRESS: 4772 Wines Lane
-          Houston, TX 77032</a>
-        <a class="footer-top__phone" href="tel:+8323475843">Telephone: +832-347-5843</a>
-        <a class="footer-top__email" href="mailto:contact@Glee.com">Email: contact@Glee.com</a>
+        <div class="footer-top__items footer-top__our">
+          <h6 class="footer-top__title">Services</h6>
+          <ul class="footer-top__list">
+            <li class="footer-top__list-item">
+              <a class="footer-top__link" href="#">
+                About us
+              </a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__link" href="#">
+                Return Policy
+              </a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__link" href="#">
+                Our Blog
+              </a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__link" href="#">
+                Contact Us
+              </a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__link" href="#">
+                Terms & Condition
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-top__items footer-top__info">
+          <h6 class="footer-top__title">Account</h6>
+
+          <ul class="footer-top__list">
+            <li class="footer-top__list-item">
+              <a class="footer-top__link" href="#">
+                Your Account
+              </a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__link" href="#">
+                Checkout
+              </a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__link" href="#">
+                Login
+              </a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__link" href="#">
+                Register
+              </a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="footer-top__items footer-top__news">
+          <h6 class="footer-top__title">newsletter</h6>
+          <p class="footer-top__text">
+            Subscribe by our newsletter and get
+            update protidin.
+          </p>
+
+          <form class="footer-top__form" action="#">
+            <input class="footer-top__input" type="email" placeholder="Email address" required>
+            <button class="footer-top__btn" type="submit">Subscribe</button>
+          </form>
+        </div>
       </div>
-
-      <div class="footer-top__items footer-top__our">
-        <h6 class="footer-top__title">Services</h6>
-        <ul class="footer-top__list">
-          <li class="footer-top__list-item">
-            <a class="footer-top__link" href="#">
-              About us
-            </a>
-          </li>
-          <li class="footer-top__list-item">
-            <a class="footer-top__link" href="#">
-              Return Policy
-            </a>
-          </li>
-          <li class="footer-top__list-item">
-            <a class="footer-top__link" href="#">
-              Our Blog
-            </a>
-          </li>
-          <li class="footer-top__list-item">
-            <a class="footer-top__link" href="#">
-              Contact Us
-            </a>
-          </li>
-          <li class="footer-top__list-item">
-            <a class="footer-top__link" href="#">
-              Terms & Condition
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="footer-top__items footer-top__info">
-        <h6 class="footer-top__title">Account</h6>
-
-        <ul class="footer-top__list">
-          <li class="footer-top__list-item">
-            <a class="footer-top__link" href="#">
-              Your Account
-            </a>
-          </li>
-          <li class="footer-top__list-item">
-            <a class="footer-top__link" href="#">
-              Checkout
-            </a>
-          </li>
-          <li class="footer-top__list-item">
-            <a class="footer-top__link" href="#">
-              Login
-            </a>
-          </li>
-          <li class="footer-top__list-item">
-            <a class="footer-top__link" href="#">
-              Register
-            </a>
-          </li>
-        </ul>
-
-      </div>
-      <div class="footer-top__items footer-top__news">
-        <h6 class="footer-top__title">newsletter</h6>
-        <p class="footer-top__text">
-          Subscribe by our newsletter and get
-          update protidin.
+      <div class="footer-bottom">
+        <p class="footer-bottom__text">
+          ©2020 CopyRight Example. All rights reserved.
         </p>
+        <nav class="footer-bottom__menu">
 
-        <form class="footer-top__form" action="#">
-          <input class="footer-top__input" type="email" placeholder="Email address" required>
-          <button class="footer-top__btn" type="submit">Subscribe</button>
-        </form>
+          <ul class="footer-bottom__menu-list">
+
+            <li class="footer-bottom__menu-item">
+              <a class="footer-bottom__menu-link" href="#">Home |</a>
+            </li>
+
+            <li class="footer-bottom__menu-item">
+              <a class="footer-bottom__menu-link" href="#"> About |</a>
+            </li>
+
+            <li class="footer-bottom__menu-item">
+              <a class="footer-bottom__menu-link" href="#">Blog |</a>
+            </li>
+
+            <li class="footer-bottom__menu-item">
+              <a class="footer-bottom__menu-link" href="#">Contact</a>
+            </li>
+
+          </ul>
+
+        </nav>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p class="footer-bottom__text">
-        ©2020 CopyRight Example. All rights reserved.
-      </p>
-      <nav class="footer-bottom__menu">
-
-        <ul class="footer-bottom__menu-list">
-
-          <li class="footer-bottom__menu-item">
-            <a class="footer-bottom__menu-link" href="#">Home </a>
-          </li>
-
-          <li class="footer-bottom__menu-item">
-            <a class="footer-bottom__menu-link" href="#"> About </a>
-          </li>
-
-          <li class="footer-bottom__menu-item">
-            <a class="footer-bottom__menu-link" href="#">Blog </a>
-          </li>
-
-          <li class="footer-bottom__menu-item">
-            <a class="footer-bottom__menu-links" href="#">Contact</a>
-          </li>
-
-        </ul>
-
-      </nav>
-    </div>
-
   </footer>
 
 
-  <script src="js/mixitup.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 

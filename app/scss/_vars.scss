@@ -3,6 +3,7 @@ $our: #262626;
 $link: #436372;
 
 
+
 %quicksand-500{
   font-family: 'Rubik-Medium', sans-serif;
   font-weight: 500;
@@ -16,6 +17,22 @@ $link: #436372;
 %quicksand-300{
   font-family: 'Rubik-Light', sans-serif;
   font-weight: 300;
+}
+
+%input-hidden{
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+}
+
+%text-hidden{
+  display: flex;
+  justify-content: space-between;
+  @extend %quicksand-400;
+  color: #243f4d;
+  padding: 15px;
+  font-size: 16px;
 }
 
 
