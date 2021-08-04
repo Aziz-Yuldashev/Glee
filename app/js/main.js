@@ -22,8 +22,17 @@ $(function(){
   
   });
 
-  $(".filter-recent__star").rateYo({
+  $(".star").rateYo({
     starWidth: "11px",
+    normalFill: "#d6d6d6",
+    ratedFill: "#ffcc00",
+    readOnly: true,
+    spacing: "7px",
+
+  });
+
+  $(".shop-content__star").rateYo({
+    starWidth: "18px",
     normalFill: "#d6d6d6",
     ratedFill: "#ffcc00",
     readOnly: true,
