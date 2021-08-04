@@ -37,4 +37,34 @@ a{
   
 }
 
-// 436372 243f4d
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 110px;
+  .pagination__list{
+    display: flex;
+    
+  }
+  &__link{
+    margin-right: 15px;
+    border: 1px solid #a3bbc8;
+    padding: 15px 20px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #243f4d;
+  }
+
+  &__next{
+    padding: 15px 20px;
+    border: 1px solid #a3bbc8;
+    font-size: 16px;
+    line-height: 30px;
+    color: #243f4d;
+  }
+
+  &__link--active{
+    background-color: #a3bbc8;
+    color: #fff;
+  }
+}

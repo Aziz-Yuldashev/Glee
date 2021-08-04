@@ -246,7 +246,7 @@
     background-color: #fef7f0;
     border: none;
     max-width: 170px;
-    width: 100%;
+    // width: 100%;
     
     &::placeholder{
       font-size: 14px;
@@ -1022,8 +1022,12 @@ ol{
   display: flex;
 }
 
+.shop__filters{
+  margin-right: 30px;
+}
+
 .filter__item{
-  max-width: 270px;
+  width: 270px;
   margin-bottom: 70px;
 }
 
@@ -1202,9 +1206,17 @@ ol{
     @extend %quicksand-400;
     color: #333333;
   }
-
-
 }
+
+.shop-content{
+  width: 100%;
+  &__inner{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px 30px;
+  }
+}
+
 
 
 
