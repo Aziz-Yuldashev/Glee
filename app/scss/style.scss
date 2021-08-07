@@ -1361,6 +1361,7 @@ ol{
 
   &__big{
     width: 390px;
+    height: 545px;
     img{
       width: 390px;
       height: 543px;
@@ -1455,8 +1456,7 @@ ol{
   text-align: center;
   @extend %quicksand-400;
   color: #333333;
-  // padding: 18px 10px;
-
+  // padding: 18px 10px;  
 }
 
 .jq-number {
@@ -1518,6 +1518,7 @@ ol{
 
 
 
+
 .jq-number__spin.plus::before {
   content: "";
   position: absolute;
@@ -1531,6 +1532,109 @@ ol{
 }
 
 
+.detalis-tabs{
+margin-top: -100px;
+&__top{
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+&__top-item{
+  line-height: 40x;
+  color: $safe;
+  font-size: 18px;
+  @extend %quicksand-500;
+  width: 240px;
+  height: 50px;
+  background-color: #edf1f4;
+  padding: 20px 70px;
+  border-radius: 8px;
+  & + .detalis-tabs__top-item{
+    margin-left: 13px;
+  } 
+}
+
+&__top-bord{
+  padding: 20px 25px;
+}
+
+&__top-item--active{
+  background-color: #a3bbc8;
+  color: #fff;
+}
+
+&__content-item{
+  display: none;
+
+  &.detalis-tabs__content-item--active{
+    display: block;
+  }
+}
+
+&__text{
+  color: $safe;
+  @extend %quicksand-400;
+  line-height: 30px;
+  font-size: 16px;
+  width: 1160px;
+}
+
+}
+
+.related{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 75px;
+
+  &__title{
+    font-size: 36px;
+    color: $safe;
+    @extend %quicksand-500;
+    margin-bottom: 15px;
+    position: relative;
+  }
+
+  &__items{
+    
+    .products__item{
+      float: left;
+      margin: 55px 6px 55px 6px;
+      & + .products__item{
+        margin-left: 30px;
+      }
+    }
+  }
+  
+  &__item{
+    
+    .products__chair {
+      width: 270px;
+  } 
+  }
+
+  
+}
+
+.slick-prev,
+.slick-next{
+  border:1px solid #edf1f4;
+  background-color: transparent;
+  padding: 18px 12px;
+  border-radius: 4px;;
+  position: absolute;
+  top: -58px;
+  right: 6px;
+}
+
+.slick-prev{
+  position: absolute;
+  right: 54px;
+  margin-right: 20px;
+}
+
+.slick-next--active{
+  border-color: #a3bbc8;
+}
 
 
 
