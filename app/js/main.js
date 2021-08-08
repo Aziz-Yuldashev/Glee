@@ -10,6 +10,8 @@ $(function () {
 
   });
 
+  
+
   $('.detalis-item__thumb').slick({
     asNavFor: '.detalis-item__big',
     focusOnSelect: true,
@@ -41,6 +43,7 @@ $(function () {
       $('.filter-price__to').text(data.to);
     },
   });
+  
 
   $('.top-slider__inner').slick({
     dots: true,
@@ -58,8 +61,8 @@ $(function () {
     prevArrow: '<button type="button" class="slick-next slick-prev"><img src="images/slider/arrow-left.svg" alt=""></button>',
     nextArrow: '<button type="button" class="slick-next slick-next--active"><img src="images/slider/arrow-right.svg" alt=""></button>',
     fade: true,
-    // autoplay: true,
-    // autoplaySpeed: 2000
+    autoplay: true,
+    autoplaySpeed: 2000
     
   });
   
@@ -73,12 +76,13 @@ $(function () {
   
   
 
-  $(".star").rateYo({
+  $(".star, .filter-recent__star").rateYo({
     starWidth: "11px",
     normalFill: "#d6d6d6",
     ratedFill: "#ffcc00",
     readOnly: true,
     spacing: "7px",
+   
 
   });
 
@@ -88,7 +92,6 @@ $(function () {
     ratedFill: "#ffcc00",
     readOnly: true,
     spacing: "7px",
-
   });
 
   $(".detalis-item__star").rateYo({
