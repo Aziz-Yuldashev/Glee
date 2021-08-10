@@ -10,6 +10,12 @@ $(function () {
 
   });
 
+  $('.commetnts__item').on('click', function(t){
+    t.preventDefault();
+    $('.commetnts__item').removeClass('commetnts__item--active');
+    $(this).addClass('commetnts__item--active');
+  })
+
   
 
   $('.detalis-item__thumb').slick({
