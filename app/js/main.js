@@ -14,7 +14,16 @@ $(function () {
     t.preventDefault();
     $('.commetnts__item').removeClass('commetnts__item--active');
     $(this).addClass('commetnts__item--active');
-  })
+  });
+
+
+
+  $('.contact__top-item').on('click', function(o){
+   
+    $('.contact__top-item').removeClass('contact__top-item--active');
+    $(this).addClass('contact__top-item--active');
+
+  });
 
   
 
