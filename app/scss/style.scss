@@ -2310,7 +2310,185 @@ margin-top: -100px;
 }
 
 
+.mission{
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 120px 0;
 
+  &__inner{
+    display: flex;
+  }
+
+  &__img{
+    margin-right: 50px;
+    width: 570px;
+    height: 675px;
+    object-fit: cover;
+  }
+
+  &__text-box{
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 55px;
+  }
+
+  &__number{
+    margin-right: 30px;
+    font-size: 140px;
+    line-height: 70px;
+    @extend %quicksand-700;
+    color: #a3bbc8;
+  }
+
+  &__text-plan{
+    width: 88px;
+    font-size: 16px;
+    line-height: 30px;
+    color: $safe;
+    @extend %quicksand-400;
+  }
+
+  &__title{
+    font-size: 36px;
+    line-height: 32px;
+    color: $safe;
+    @extend %quicksand-700;
+    margin-bottom: 40px;
+  }
+
+  &__text{
+    border-bottom: 3px solid #e6eaf0;
+    padding-bottom: 60px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 30px;
+    color: $safe;
+    @extend %quicksand-400;
+    width: 555px;
+  }
+
+  &__box{
+    display: flex;
+  }
+
+  &__num{
+    & + .mission__num{
+      margin-left: 120px;
+    }
+    font-size: 36px;
+    line-height: 38px;
+    color: $safe;
+    @extend %quicksand-700;
+    width: 85px;
+    padding-left: 55px;
+  }
+  
+  &__span{
+    display: block;
+    font-size: 16px;
+    line-height: 17px;
+    color: #4c4c4c;
+    @extend %quicksand-400;
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+
+  &__num-one{
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      background-image: url('../images/icons/write.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 37px;
+      height: 38px;
+      top: 7px;
+      left: 0;
+    }
+  }
+
+  &__num-two{
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      background-image: url('../images/icons/radio.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 37px;
+      height: 38px;
+      top: 7px;
+      left: 0;
+    }
+  }
+
+  &__num-three{
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      background-image: url('../images/icons/medal.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 37px;
+      height: 38px;
+      top: 7px;
+      left: 0;
+    }
+  }
+}
+
+.work{
+  background-color: #fcd7b6;
+  height: 320px;
+  margin-bottom: 120px;
+
+  &__items{
+    width: 1070px;
+    margin: 0 auto; 
+    padding: 85px 0;
+    display: flex;
+  }
+
+  &__item{
+    max-width: 188px;
+    height: 155px;
+    & + .work__item{
+      margin-left: 140px;
+    }
+  }
+
+  &__image{
+    margin: 0 auto 25px;
+  }
+
+  &__num{
+    font-size: 36px;
+    line-height: 32px;
+    color: $safe;
+    margin-bottom: 25px;
+    @extend %quicksand-500;
+    text-align: center;
+  }
+
+  &__span{
+    font-size: 18px;
+    line-height: 32px;
+    color: $safe;
+    @extend %quicksand-500;
+    text-align: center;
+  }
+
+  &__image-car{
+    margin-bottom: 50px;
+  }
+
+  &__image-window{
+    margin-bottom: 32px;
+  }
+
+}
 
 
 
