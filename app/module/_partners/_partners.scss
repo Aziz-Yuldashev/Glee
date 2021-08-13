@@ -1,0 +1,22 @@
+.partners{
+  
+  padding-top: 270px;
+  padding-bottom: 90px;
+  margin-bottom: 70px;
+  background-color: #fef7f0;
+  &__list{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 1040px;
+    align-items: center;
+    color: #fef7f0;
+  }
+}
+
+
+
+.partners__login{
+  padding-top: 80px;
+  margin-bottom: 70px;
+}

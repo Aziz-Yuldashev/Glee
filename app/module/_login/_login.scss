@@ -1,0 +1,67 @@
+.modal{
+  max-width: 470px;
+  margin: 120px auto;
+  
+  &__label{
+    @extend %quicksand-400;
+    color: $link;
+    font-size: 14px;
+    line-height: 48px;
+  }
+
+  &__input{
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    height: 60px;
+    padding: 0 10px;
+    border: 2px solid #f6f6f6;
+  }
+
+  &__button{
+    border: none;
+    background-color: #a3bbc8;
+    margin-bottom: 25px;
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    @extend %quicksand-500;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  &__password{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #f6f6f6;
+  }
+
+  &__password-link{
+    color: $link;
+    @extend %quicksand-400;
+    font-size: 14px;
+    line-height: 48px;
+  }
+
+  &__links{
+    margin: 30px 0 20px;
+    text-align: center;
+  }
+
+  &__link{
+    font-size: 14px;
+    line-height: 24px;
+    color: $link;
+  }
+
+  &__button-account{
+    border: 2px solid #a3bbc8;
+    background-color: #fff;
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    cursor: pointer;
+  }
+
+}
