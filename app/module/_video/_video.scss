@@ -1,0 +1,15 @@
+.video{
+  padding: 115px 0;
+
+  &__inner{
+    background-image: url('../images/video/video.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+}

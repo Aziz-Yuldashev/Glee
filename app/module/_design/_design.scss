@@ -1,0 +1,50 @@
+.design{
+  padding: 0 0 120px;
+  
+
+  &__title{
+    text-align: center;
+  }
+
+  &__filter-btn{
+    text-align: center;
+  }
+
+  &__filter-btn + .design__filter-btn{
+    margin-left: 28px;
+    
+  }
+
+  &__btn{
+    border:none;
+    background-color: transparent;
+    color: #8b8b8b;
+    font-size: 16px;
+    @extend %quicksand-500;
+    margin-bottom: 80px;
+    
+  }
+
+  &__btn:hover{
+    color: #000;
+    cursor: pointer;
+  }
+
+  &__content{
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+
+  &__items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px 35px;
+  }
+
+  &__item-img{
+    width: 370px;
+    height: 245px;
+  }
+
+
+}
