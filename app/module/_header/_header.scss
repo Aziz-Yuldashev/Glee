@@ -1,15 +1,14 @@
-
-.header{
-  &__inner{
+.header {
+  &__inner {
     margin: 50px 0 45px;
-    display:flex; 
+    display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
-  // background-color: aquamarine;
+    // background-color: aquamarine;
   }
 
-  &__inner::before{
+  &__inner::before {
     content: "Glee.";
     position: absolute;
     font-size: 36px;
@@ -20,87 +19,85 @@
   }
 }
 
+.menu {
+  
 
+  &__btn {
+    display: none;
+  }
 
-
-.menu{
-
-
-  &__list{
+  &__list {
     display: flex;
     font-size: 15px;
     line-height: 12px;
   }
 
-  &__list-item + .menu__list-item{
+  &__list-item + .menu__list-item {
     margin-left: 35px;
   }
 
-  &__list-link{
+  &__list-link {
     color: $header;
     @extend %quicksand-500;
   }
 }
 
-.user-nav{
+.user-nav {
   display: flex;
-  
-  &__inner{
+
+  &__inner {
     position: relative;
-    
   }
 
-  &__inner + .user-nav__inner{
+  &__inner + .user-nav__inner {
     margin-left: 50px;
   }
 
-  &__shape-mark{
+  &__shape-mark {
     display: flex;
-    
-
   }
-  
-  &__link-mark{
+
+  &__link-mark {
     margin-left: 50px;
   }
 
-  &__num{
+  &__num {
     content: "";
     position: absolute;
     border-radius: 50%;
     background-color: #fff;
     width: 15px;
     height: 15px;
-    top:9px;
+    top: 9px;
     right: 87px;
     font-size: 10px;
     text-align: center;
     line-height: 18px;
   }
 
-  &__num-mark{
+  &__num-mark {
     content: "";
     position: absolute;
     border-radius: 50%;
     background-color: #fff;
     width: 15px;
     height: 15px;
-    top:9px;
+    top: 9px;
     right: 25px;
     font-size: 10px;
     text-align: center;
     line-height: 18px;
   }
-  
-    &__icon{
-    // position: relative;   
+
+  &__icon {
+    // position: relative;
     min-width: 50px;
     min-height: 50px;
     background-color: #d4eaf5;
     border-radius: 50%;
-    }
+  }
 
-  &__shape-mark{
+  &__shape-mark {
     // position: relative;
     min-width: 150px;
     min-height: 50px;
@@ -108,7 +105,7 @@
     border-radius: 50px;
   }
 
-  &__ellipse{
+  &__ellipse {
     // position: relative;
     min-width: 50px;
     min-height: 50px;
@@ -116,23 +113,139 @@
     border-radius: 50%;
   }
 
-  &__link-image{
+  &__link-image {
     position: absolute;
     left: 16px;
     top: 16px;
-    
   }
 
-   &__link-image-shape{
+  &__link-image-shape {
     position: absolute;
     top: 16px;
-    left: 35px
+    left: 35px;
   }
 
-  &__link-image-mark{
+  &__link-image-mark {
     position: absolute;
     top: 16px;
-    left: 100px
+    left: 100px;
   }
+}
+
+@media (max-width: 1250px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .header {
+    &__inner {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (max-width: 1110px) {
+  .menu {
+    margin-left: 35px;
+    order: 1;
+    &__list {
+      transform: translateY(-200%);
+      position: absolute;
+      width: 100%;
+      top: 120px;
+      left: 0;
+      flex-direction: column;
+      align-items: center;
+      z-index: 8;
+      transition: all 0.3s;
+      &.menu__list--active {
+        transform: translateY(0);
+        transition: all 0.3s;
+        background-color: #fff;
+      }
+    }
+
+    &__list-link:hover{
+      color: palevioletred;
+    }
+
+    .menu__list-item + .menu__list-item {
+      margin-left: 0px;
+    }
+
+    &__list-item {
+      width: 100%;
+      padding: 0 15px;
+      text-align: center;
+    }
+
+    &__list-link {
+      padding: 12px 0;
+      display: block;
+    }
+
+    &__btn {
+      width: 30px;
+      height: 22px;
+      border: none;
+      background-color: transparent;
+      padding: 0;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      margin-right: 10px;
+
+      &::after,
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: #000;
+      }
+
+      &::after {
+        bottom: 0;
+      }
+
+      &::before {
+        top: 0;
+      }
+    }
+
+    &__span {
+      width: 100%;
+      height: 3px;
+      background-color: #000;
+    }
+  }
+
+  .user-nav {
+    margin-left: auto;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+  .menu {
+    order: 0;
+  }
+
+  .user-nav {
+    width: 100%;
+    margin-top: 25px;
+    justify-content: flex-end;
+  }
+}
+
+
+@media (max-width: 370px) {
+ 
+  .user-nav__inner+.user-nav__inner {
+    margin-left: 10px;
+}
 
 }

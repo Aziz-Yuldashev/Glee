@@ -13,3 +13,51 @@
   }
 
 }
+
+@media (max-width:1600px ){
+  .video{
+    padding: 0 0 115px;
+  }
+}
+
+@media (max-width:1000px ){
+  .video{
+    &__inner{
+      height: 300px;
+    }
+
+    &__img{
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width:750px ){
+  .video{
+    &__inner{
+      height: 200px;
+    }
+
+    &__img{
+      width: 60%;
+     
+    }
+  }
+}
+
+@media (max-width:520px ){
+  .video{
+    &__inner{
+      height: 150px;
+    }
+
+    &__img{
+      width: 50%;
+     
+    }
+  }
+}
+
+
+

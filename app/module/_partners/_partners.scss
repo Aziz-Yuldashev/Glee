@@ -20,3 +20,27 @@
   padding-top: 80px;
   margin-bottom: 70px;
 }
+
+
+
+@media (max-width:1210px ){
+  .partners{
+    padding: 40px 0;
+  }
+}
+
+@media (max-width:1070px ){
+
+  .partners{
+   &__list{
+     flex-wrap: wrap;
+     justify-content: center;
+     width: auto;
+   }
+
+   &__item{
+     margin: 25px 25px;
+   }
+  }
+
+}

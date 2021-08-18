@@ -1,22 +1,20 @@
-
-.footer{
+.footer {
   max-width: 1170px;
   margin: 0 auto;
 }
 
-.footer-top{
+.footer-top {
   padding: 0px 0 70px;
   border-bottom: 1px solid #dae4e9;
   display: flex;
 
-  &__contact{
+  &__contact {
     width: 220px;
     margin-right: 100px;
     position: relative;
-    
   }
 
-  &__contact::before{
+  &__contact::before {
     content: "Glee.";
     position: absolute;
     font-size: 36px;
@@ -26,31 +24,29 @@
     @extend %quicksand-500;
   }
 
-  &__our{
+  &__our {
     width: 120px;
     margin-right: 175px;
   }
 
-  &__info{
+  &__info {
     width: 90px;
     margin-right: 200px;
   }
 
-  &__news{
+  &__news {
     width: 320px;
   }
-  
-  &__logo{
+
+  &__logo {
     display: block;
     margin-bottom: 30px;
 
-    &__image{
+    &__image {
       position: relative;
     }
 
-   
-
-    &__contact::before{
+    &__contact::before {
       content: "Glee.";
       position: absolute;
       font-size: 36px;
@@ -59,34 +55,30 @@
       left: 60px;
       @extend %quicksand-500;
     }
-
-
   }
-    
+
   &__adress,
   &__phone,
-  &__email{
+  &__email {
     line-height: 24px;
     display: block;
     margin-bottom: 20px;
   }
 
-
-  &__title{
+  &__title {
     margin-bottom: 33px;
     margin-top: 15px;
     font-size: 16px;
     line-height: 21px;
-    color:#1f2044;
+    color: #1f2044;
     text-transform: uppercase;
   }
-  
-  &__list-item{
+
+  &__list-item {
     margin-bottom: 15px;
-    
   }
 
-  &__text{
+  &__text {
     font-size: 14px;
     line-height: 32x;
     color: #7b7b7b;
@@ -94,67 +86,169 @@
     width: 235px;
   }
 
-  &__form{
+  &__form {
     display: flex;
   }
 
-  &__input{
+  &__input {
     padding: 15px;
     background-color: #fef7f0;
     border: none;
     max-width: 170px;
     // width: 100%;
-    
-    &::placeholder{
+
+    &::placeholder {
       font-size: 14px;
       color: #234969;
       @extend %quicksand-500;
     }
-
- 
   }
 
-  &__btn{
+  &__btn {
     background-color: #a3bbc8;
-    border:none;
+    border: none;
     color: #fff;
     padding: 15px;
+    cursor: pointer;
   }
-
 }
 
-.footer-bottom{
+.footer-bottom {
   display: flex;
   justify-content: space-between;
   margin-top: 35px;
 
-  &__text{
+  &__text {
     font-size: 14px;
     line-height: 32x;
     color: #7b7b7b;
     margin-bottom: 35px;
   }
 
-  &__menu-list{
+  &__menu-list {
     display: flex;
   }
-  
 
-  &__menu-item + .footer-bottom__menu-item{
+  &__menu-item + .footer-bottom__menu-item {
     margin-left: 30px;
   }
 
-  &__menu-link{
+  &__menu-link {
     position: relative;
   }
 
-  &__menu-link::after{
+  &__menu-link::after {
     content: "|";
     position: absolute;
     top: 0;
     right: -15px;
+  }
+}
 
-   
+@media (max-width: 1170px) {
+
+  .footer{
+    padding: 0 15px;
+  }
+  .footer-bottom {
+    padding: 0 70px;
   }
 
+  .footer-top {
+   
+
+    &__info {
+      margin-right: 100px;
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+
+
+  .footer-top {
+    flex-wrap: wrap;
+    &__our {
+    
+      margin-right: 100px;
+    }
+
+  }
+}
+
+@media (max-width: 1000px){
+  
+  .footer-top {
+    
+    &__input{
+      max-width: 100%;
+    }
+
+   
+
+  }
+
+  .footer-bottom{
+    flex-wrap: wrap;
+  }
+
+}
+@media (max-width: 675px){
+  .footer-bottom{
+    justify-content: center;
+
+    &__text{
+      margin-bottom: 15px;
+    }
+    
+    &__menu{
+      margin-bottom: 15px;
+    }
+  }
+}
+
+
+
+@media (max-width: 460px){
+  .footer-top {
+  padding: 0px 0 40px;
+
+  &__items{
+    margin-bottom: 20px;
+  }
+
+  &__form{
+    flex-wrap: wrap;
+  }
+
+  &__input{
+    min-width: 100%;
+  }
+
+  &__btn{
+    width: 100%;
+  }
+
+  }
+
+  .footer-bottom {
+    padding: 0;
+  }
+}
+
+@media (max-width: 350px){
+  .footer-top {
+    &__input{
+      min-width: 85%;
+    }
+  
+    &__btn{
+      width: 85%;
+    }
+  }
+
+  .footer-bottom{
+    margin-right: 20px;
+    
+  }
 }

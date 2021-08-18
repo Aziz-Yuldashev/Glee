@@ -1,5 +1,9 @@
 $(function () {
 
+  $('.menu__btn').on('click', function(){
+    $('.menu__list').toggleClass('menu__list--active');
+  });
+
   $('.detalis-tabs__top-item').on('click', function(e){
     e.preventDefault();
     $('.detalis-tabs__top-item').removeClass('detalis-tabs__top-item--active');
@@ -64,8 +68,8 @@ $(function () {
     dots: true,
     arrows: false,
     fade: true,
-    autoplay: true,
-    autoplaySpeed: 2000
+    // autoplay: true,
+    // autoplaySpeed: 2000
 
   });
 

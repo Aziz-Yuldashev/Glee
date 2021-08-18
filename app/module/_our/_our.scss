@@ -31,7 +31,7 @@
 
   &__items{
     display: flex;
-   
+   flex-wrap: wrap;
   }
 
   &__item{
@@ -76,6 +76,7 @@
     height: 75px;
     color: $our;
     @extend %quicksand-500;
+   
   }
 
   &__link-box{
@@ -91,6 +92,88 @@
 
   &__link + .our__link{
     margin-left: 30px;
+  }
+}
+
+@media (max-width:1210px ){
+  .our{
+    padding: 0 15px;
+    &__item{
+      margin-bottom: 200px;
+    }
+
+    &__item + .our__item{
+      margin-left: 0px
+    }
+
+    &__item{
+      margin-right: 20px;
+      
+    }
+  }
+}
+
+@media (max-width:830px ){
+  .our{
+
+    &__item{
+      margin: 0 auto 200px!important;
+
+    }
+  }
+}
+
+@media (max-width:420px ){
+  .our{
+
+   &__item{
+   width: 70%;
+   
+   }
+
+   &__text{
+    width: 225px;
+    height: 100px;
+   }
+  }
+}
+
+
+@media (max-width:350px ){
+  .our{
+
+   &__item{
+    padding-bottom: 35px;
+   &::before{
+    top: 160px;
+   }
+   }
+
+   &__text{
+    width: 200px;
+    height: 115px;
+   }
+
+   &__img{
+     height: 180px;
+   }
+
+   &__box{
+    padding: 35px 5px 35px 5px;
+   }
+
+   &__link +.our__link {
+     margin-left: 10px;
+   }
+
+   &__top{
+     flex-wrap: wrap;
+   }
+
+   &__top-link{
+    margin-top: 0px;
+    margin-bottom: 25px;
+   }
   }
 }
 
