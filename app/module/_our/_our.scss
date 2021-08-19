@@ -135,8 +135,14 @@
     width: 225px;
     height: 100px;
    }
+
+   &__top-link::after {
+    right: 0px;
+   }
   }
 }
+
+
 
 
 @media (max-width:350px ){
