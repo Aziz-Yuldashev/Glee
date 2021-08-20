@@ -1,36 +1,33 @@
-.blog{
+.blog {
   max-width: 1170px;
   padding: 120px 0;
   margin: 0 auto;
-  &__inner{
+  &__inner {
     display: flex;
-    
   }
 
-  &__content{
+  &__content {
     margin-right: 70px;
     width: 830px;
 
     .pagination {
       justify-content: flex-start;
       margin-top: 60px;
-  }
+    }
   }
 
-  &__content-item{
+  &__content-item {
     position: relative;
-
   }
 
-  &__content-img{
+  &__content-img {
     width: 830px;
     height: 500px;
     object-fit: cover;
     margin-bottom: 40px;
-   
   }
 
-  &__content-box{
+  &__content-box {
     position: absolute;
     top: 430px;
     left: 0;
@@ -40,64 +37,60 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
   }
-  
+
   &__content-link {
     position: relative;
     color: #fff;
     font-size: 12px;
     line-height: 30px;
-  } 
-
-  &__content-after{
-  position: absolute;
-  left: -22px;
-  top: 5px;
   }
 
-  &__content-befor{
+  &__content-after {
+    position: absolute;
+    left: -22px;
+    top: 5px;
+  }
+
+  &__content-befor {
     position: absolute;
     right: 62px;
     top: 5px;
- }
+  }
 
- &__content-title{
-   @extend %quicksand-400;
-  color: #333;
- }
+  &__content-title {
+    @extend %quicksand-400;
+    color: #333;
+  }
 
- &__content-text{
-   width: 795px;
-   font-size: 16px;
-   color: $safe;
-   @extend %quicksand-400;
-   margin-bottom: 40px;
-   line-height: 30px;
- }
+  &__content-text {
+    width: 795px;
+    font-size: 16px;
+    color: $safe;
+    @extend %quicksand-400;
+    margin-bottom: 40px;
+    line-height: 30px;
+  }
 
- &__content-view{
-   background-color: #fff;
-   color: #a3bbc8;
-   border: 1px solid #a3bbc8;
-   margin-bottom: 50px; 
-  
- }
-
+  &__content-view {
+    background-color: #fff;
+    color: #a3bbc8;
+    border: 1px solid #a3bbc8;
+    margin-bottom: 50px;
+  }
 }
 
-.blog-filter{
-
+.blog-filter {
   width: 270px;
-  &__search{
+  &__search {
     margin-bottom: 60px;
   }
 
-  &__form{
+  &__form {
     display: flex;
   }
-  
-  &__input{
+
+  &__input {
     border-right: none;
     display: inline-block;
     padding: 0 50px 0 10px;
@@ -107,11 +100,9 @@
     border-top: 2px solid #ebf1f3;
     border-bottom: 2px solid #ebf1f3;
     border-left: 1px solid #ebf1f3;
-
-
   }
 
-  &__btn{
+  &__btn {
     border: none;
     background-color: #ebf1f3;
     width: 45px;
@@ -121,45 +112,43 @@
     cursor: pointer;
   }
 
-  &__img{
+  &__img {
     margin: 0 auto;
   }
 }
 
-.blog-posts{
-  &__label{
+.blog-posts {
+  &__label {
     display: flex;
     margin-bottom: 20px;
     height: 70px;
-    &:last-child{
+    &:last-child {
       margin-bottom: 0px;
     }
   }
 
-  &__item{
+  &__item {
     margin-right: 20px;
-   
   }
 
-  &__link{
+  &__link {
     width: 70px;
   }
 
-  &__image{
+  &__image {
     max-width: 70px;
     object-fit: cover;
-  
   }
 
-  &__text{
+  &__text {
     font-size: 14px;
     line-height: 20x;
     color: #333;
     @extend %quicksand-400;
     margin-bottom: 15px;
   }
-  
-  &__link{
+
+  &__link {
     font-size: 12px;
     line-height: 30x;
     color: #9a9a9a;
@@ -167,8 +156,8 @@
     padding-left: 20px;
   }
 
-  &__link-img{
-    content: '';
+  &__link-img {
+    content: "";
     position: absolute;
     width: 15px;
     height: 15px;
@@ -178,57 +167,53 @@
   }
 }
 
-
-.filter__item{
+.filter__item {
   width: 270px;
   margin-bottom: 70px;
 }
 
-.filter__title{
-  color:#243f4d;
+.filter__title {
+  color: #243f4d;
   @extend %quicksand-500;
   position: relative;
   margin-bottom: 30px;
   display: inline-block;
-
-  
 }
-.filter__title::after{
+.filter__title::after {
   content: "";
   position: absolute;
-  background-image: url('../images/filter/line.svg');
+  background-image: url("../images/filter/line.svg");
   width: 38px;
   height: 2px;
   top: 10px;
-    right: -50px;
+  right: -50px;
 }
 
-.filter-category{
-  &__label{
+.filter-category {
+  &__label {
     margin-bottom: 5px;
     display: block;
     cursor: pointer;
-    &:last-child{
+    &:last-child {
       margin-bottom: 0;
     }
   }
 
-  &__input{
+  &__input {
     @extend %input-hidden;
-    &:checked + .filter-category__checkbox{
+    &:checked + .filter-category__checkbox {
       background-color: #edf1f4;
       border-radius: 8px;
     }
   }
 
-  &__checkbox{
+  &__checkbox {
     @extend %text-hidden;
   }
 }
 
-.top-slider{
-  
-  &__link{
+.top-slider {
+  &__link {
     display: flex;
     justify-content: space-between;
     padding: 23px 20px;
@@ -237,7 +222,117 @@
     background-color: #fff;
     color: #a3bbc8;
     border: 1px solid #a3bbc8;
-    margin-bottom: 50px; 
-    
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .blog {
+    .filter-category,
+    .blog-posts {
+      display: none;
+    }
+
+    .blog-filter {
+      order: -1;
+      width: 100%;
+
+      &__input {
+        width: 100%;
+      }
+    }
+
+    &__inner {
+      flex-direction: column;
+      padding: 0 20px;
+    }
+  }
+
+  .blog__content {
+    margin: 0 auto;
+    width: 100%;
+
+    &-box {
+      top: 0px;
+    }
+
+    &-img {
+      width: 100%;
+    }
+
+    &-text {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 830px) {
+  .blog__content {
+    &-img {
+      height: 460px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .blog__content {
+    &-img {
+      height: 370px;
+    }
+  }
+}
+
+@media (max-width: 610px) {
+  .blog__content {
+    &-img {
+      height: 325px;
+    }
+
+    &-box {
+      position: static;
+      left: 0;
+      width: 100%;
+      margin-top: 0px;
+      margin-bottom: 25px;
+    }
+
+    &-img {
+      margin-bottom: 0;
+    }
+
+    &-title {
+      font-size: 26px;
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .blog__content {
+    &-img {
+      height: 276px;
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .blog__content {
+    &-img {
+      height: 220px;
+    }
+
+    &-box {
+      height: 50px;
+    }
+
+    &-title {
+      font-size: 19px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .blog__content-img {
+    height: 190px;
   }
 }
