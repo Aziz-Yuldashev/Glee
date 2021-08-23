@@ -1,9 +1,9 @@
-.related{
+.related {
   max-width: 1200px;
   margin: 0 auto;
   padding-bottom: 75px;
 
-  &__title{
+  &__title {
     font-size: 36px;
     color: $safe;
     @extend %quicksand-500;
@@ -11,117 +11,104 @@
     position: relative;
   }
 
-  &__items{
-    
-    .products__item{
+  &__items {
+    .products__item {
       float: left;
       margin: 55px 6px 55px 6px;
-      & + .products__item{
+      & + .products__item {
         margin-left: 30px;
       }
     }
   }
-  
-  &__item{
-    
+
+  &__item {
     .products__chair {
       width: 270px;
-  } 
+    }
   }
-
-  
 }
 
 .slick-prev,
-.slick-next{
-  border:1px solid #edf1f4;
+.slick-next {
+  border: 1px solid #edf1f4;
   background-color: transparent;
   padding: 18px 12px;
-  border-radius: 4px;;
+  border-radius: 4px;
   position: absolute;
   top: -58px;
   right: 6px;
 }
 
-.slick-prev{
+.slick-prev {
   position: absolute;
   right: 54px;
   margin-right: 20px;
 }
 
-.slick-next--active{
+.slick-next--active {
   border-color: #a3bbc8;
 }
 
-.products{
+.products {
   padding: 75px 0 85px;
 
- 
-
-  &__title{
+  &__title {
     text-align: center;
   }
 
-  &__filter-btn{
+  &__filter-btn {
     text-align: center;
   }
 
-  &__filter-btn + .products__filter-btn{
+  &__filter-btn + .products__filter-btn {
     margin-left: 28px;
-    
   }
 
-  &__btn{
-    border:none;
+  &__btn {
+    border: none;
     background-color: transparent;
     color: #8b8b8b;
     font-size: 16px;
     @extend %quicksand-500;
     margin-bottom: 80px;
-    
   }
 
-  &__btn:hover{
+  &__btn:hover {
     color: #000;
     cursor: pointer;
   }
 
-  &__content{
+  &__content {
     max-width: 1170px;
     margin: 0 auto;
   }
-  
-  &__items{
-    
+
+  &__items {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 40px 30px;
-    
   }
-  
-  
-  &__item{
+
+  &__item {
     position: relative;
     overflow: hidden;
     box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
     background-color: rgb(255, 255, 255);
   }
-  
-  &__chair{
+
+  &__chair {
     padding: 40px 0 40px;
     max-width: 270px;
     height: 380px;
     position: relative;
   }
 
-  &__item-img{
-   margin: 0 auto;
+  &__item-img {
+    margin: 0 auto;
   }
 
-
-
-  &__name{
-    position:absolute;
+  &__name {
+    position: absolute;
     bottom: 70px;
     left: 0;
     right: 0;
@@ -131,8 +118,8 @@
     color: #243f4d;
   }
 
-  &__price{
-    position:absolute;
+  &__price {
+    position: absolute;
     text-align: center;
     font-size: 16px;
     line-height: 40px;
@@ -140,29 +127,27 @@
     bottom: 40px;
     left: 0;
     right: 0;
-    
   }
-  
 
- &__item-link-mark{
-   position: absolute;
-   left: 0px;
-   right: 0px;
-   bottom: 160px;
-   display: flex;
-   align-items: center;
-   justify-content: space-around;
-   width: 170px;
-   height: 45px;
-   margin: 0 auto;
-   transform: translateY(3300%);
-  
-  transition: all .8s;
- }
+  &__item-link-mark {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 170px;
+    height: 45px;
+    margin: 0 auto;
+    transform: translateY(3300%);
 
-  &__item-link{
+    transition: all 0.8s;
+  }
+
+  &__item-link {
     border-radius: 50%;
-    background-color:#fff;
+    background-color: #fff;
     width: 50px;
     height: 50px;
     display: flex;
@@ -170,24 +155,59 @@
     justify-content: center;
     transition: all 1s;
     display: inherit;
-    path{
-    transition: all 1s;
+    path {
+      transition: all 1s;
     }
   }
 
-  &__item-link:hover{
+  &__item-link:hover {
     background-color: #a3bbc8;
-    path{
+    path {
       fill: #fff;
     }
   }
-  
-  
-  &__item:hover{
-   
-    .products__item-link-mark{
+
+  &__item:hover {
+    .products__item-link-mark {
       transform: translateY(0);
     }
-   }
+  }
+}
 
+@media (max-width: 1200px) {
+  .related__item {
+    padding: 0 15px;
+
+    .products__item {
+      margin: 55px 6px 55px 30px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .related__items {
+    .products__item {
+      margin: 55px 0px 55px 0px;
+      width: 100%;
+    }
+    .products__item + .products__item {
+      margin-left: 0px;
+    }
+  }
+
+  .products__chair {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .slick-prev {
+    margin-right: 70px;
+  }
+
+  .slick-prev,
+  .slick-next {
+    top: 0px;
+    right: 140px;
+  }
 }

@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/contact.min.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/contact.min.css">
+  </head>
 
-<body>
+  <body>
 
-  <header class="header">
+    <header class="header">
   <div class="container">
     <div class="header__inner">
       <a class="logo" href="#">
@@ -91,9 +91,9 @@
   </div>
 </header>
 
-  <main class="main">
+    <main class="main">
 
-    <section class="top">
+      <section class="top">
       <div class="top__container">
         <h2 class="top__title">
           Contact
@@ -220,8 +220,7 @@
       </div>
     </section>
 
-   
-<section class="our">
+      <section class="our">
 
       <div class="our__top">
         <h3 class="title">
@@ -327,10 +326,9 @@
         </ul>
       </div>
 
+    </main>
 
-  </main>
-
-<footer class="footer">
+    <footer class="footer">
 
   <div class="footer-top">
     <div class="footer-top__items footer-top__contact">
@@ -447,23 +445,26 @@
 
 </footer>
 
-  <script
+    <script
   src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly"
   async
 ></script>
-<script>
-  let map;
+    <script>
+      let map;
 
-function initMap() {
-  map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: 29.76897978164947, lng: -95.37134536223651 },
-    zoom: 10,
-  });
-}
-
-
-</script>
-  <script src="js/main.min.js"></script>
-</body>
+      function initMap() {
+        map = new google
+          .maps
+          .Map(document.getElementById("map"), {
+            center: {
+              lat: 29.76897978164947,
+              lng: -95.37134536223651
+            },
+            zoom: 10
+          });
+      }
+    </script>
+    <script src="js/main.min.js"></script>
+  </body>
 
 </html>
